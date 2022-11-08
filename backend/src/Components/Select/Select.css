@@ -1,0 +1,32 @@
+.Select >form{
+	width: 300px;
+    text-align: left;
+    margin: 50px auto;
+    border: 1px solid;
+    padding : 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+}
+.Select {
+	direction: ltr;
+}
+
+.Select>table{
+    margin: 50px auto;
+}
+.Select table, .Select th, .Select td{
+    border:1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.Select tr:nth-child(even){
+    background-color: darkolivegreen;
+}
+.Select tr:nth-child(odd){
+    background-color: darkgreen;
+}
+
+.Select thead tr:first-child{
+    background-color: lightgreen;
+}
