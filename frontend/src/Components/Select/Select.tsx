@@ -66,8 +66,8 @@ function Select(): JSX.Element {
                 <tr key={item.id}>
                   <td>{item.devTeam_id}</td>
                   <td>{item.devTeam_name}</td>
-                  <td>{item.start_meet?.toLocaleString().split("T")[0]}</td>
-                  <td>{item.end_meet?.toLocaleString().split("T")[0]}</td>
+                  <td>{item.start_meet?.toLocaleString().split("T")[0]} {item.start_meet?.toLocaleString().split("T")[1]}</td>
+                  <td>{item.end_meet?.toLocaleString().split("T")[0]} {item.end_meet?.toLocaleString().split("T")[1]}</td>
                   <td>{item.description}</td>
                   <td>{item.room}</td>
                 </tr>

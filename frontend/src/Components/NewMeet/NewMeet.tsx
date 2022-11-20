@@ -37,18 +37,18 @@ function NewMeet(): JSX.Element {
                 <h2>Add Meeting</h2>
 
                 <label>Team Name:</label>
-                <select defaultValue="" {...register("devTeam_id")}>
+                <select defaultValue="" {...register("devTeam_id")} required>
                     <option disabled value="">Select Payment method</option>
                     {meeting.map(item => <option key={item.id} value={item.id}>{item.devTeam_name}</option>)}
                 </select>
                 <label>Start</label>
-                <input type="datetime-local" {...register("start_meet")} value={userData?.start_meet} />
+                <input type="datetime-local" {...register("start_meet")} value={userData?.start_meet} required/>
 
                 <label>End</label>
-                <input type="datetime-local" {...register("end_meet")} value={userData?.end_meet} />
+                <input type="datetime-local" {...register("end_meet")} value={userData?.end_meet} required/>
 
                 <label>Description</label>
-                <input type="text" {...register("description")} value={userData?.description} />
+                <input type="text" {...register("description")} value={userData?.description} required/>
 
                 <label>Room</label>
                 <input type="text" {...register("room")} value={userData?.room} />
